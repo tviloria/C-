@@ -44,7 +44,7 @@ int main() {
 
         }break;
 
-        // Decryption option
+        // Decrypt option
         case '2':{
             std::cout << "Enter shift key \n";
             std::cin >> key;
@@ -69,7 +69,7 @@ int main() {
     return 0;
 }
 
-// Encrypt Function
+// Encrypt function
 std::string encrypt(std::string text, int key){
     std::string encryptIt = text;
     int move;
@@ -100,6 +100,7 @@ std::string encrypt(std::string text, int key){
     return encryptIt;
 }
 
+// Decrypt function
 std::string decrypt(std::string text, int key){
     std::string decryptIt = text;
     int move;
